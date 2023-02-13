@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Getter
 @Setter
@@ -15,7 +16,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name="universite")
-public class Universite {
+public class Universite  implements Serializable {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
